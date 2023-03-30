@@ -8,7 +8,12 @@ function App() {
     axios.get('http://localhost:8080/hello').then(response => setHello(response.data))
   }, [])
 
-  return <div>백엔드에서 가져온 데이터입니다!! : {hello}</div>
+  return (
+    <div>
+      백엔드에서 가져온 데이터입니다!! : {hello}
+      <br /> branch 테스트
+    </div>
+  )
 }
 
 export default App
